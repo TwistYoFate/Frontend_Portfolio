@@ -67,6 +67,54 @@ input {
   box-shadow: 0 5px 10px gainsboro;
 }
 
+#form__expiry__label{
+  top: 82%;
+  left: 23%;
+  transform: translate(-50%, -70%);
+  font-size: small;
+}
+
+#form__month {
+  top: 90%;
+  left: 20%;
+  transform: translate(-50%, -70%);
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  width: 20%;
+  height: 7%;
+}
+
+
+#form__year {
+  top: 90%;
+  left: 45%;
+  transform: translate(-50%, -70%);
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  width: 20%;
+  height: 7%;
+}
+
+#form__cvv__label{
+  top: 82%;
+  right: 23%;
+  transform: translate(0%, -70%);
+  font-size: small;
+}
+
+
+#form__cvv {
+  top: 90%;
+  right: 9%;
+  transform: translate(0%, -70%);
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  width: 20%;
+  height: 7%;
+}
+
+
+
 /* 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
 769px — 1024px: Small screens, laptops
