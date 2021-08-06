@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "animejs": "^3.2.1",
-    "jquery": "^3.6.0"
+    "animejs": "^3.2.1"
   }
 }

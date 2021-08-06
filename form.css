@@ -1,0 +1,110 @@
+/* -------------form------------------- */
+.form {
+  position: absolute;
+  height: 60%;
+  width: 90%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 20px 20px skyblue;
+  z-index: -1;
+}
+
+.form > label,
+input {
+  position: absolute;
+}
+
+#form__number__label {
+  top: 42%;
+  left: 23%;
+  transform: translate(-50%, -70%);
+  font-size: small;
+}
+
+#form__number {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  width: 80%;
+  height: 7%;
+}
+
+#form__number:focus {
+  outline: none !important;
+  border: 1px solid skyblue;
+  border-radius: 5px;
+  /* border: 10px solid red; */
+  box-shadow: 0 5px 10px gainsboro;
+}
+
+#form__name__label {
+  top: 62%;
+  left: 23%;
+  transform: translate(-50%, -70%);
+  font-size: small;
+}
+
+#form__name {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  width: 80%;
+  height: 7%;
+}
+
+#form__name:focus {
+  outline: none !important;
+  border: 1px solid skyblue;
+  border-radius: 5px;
+  /* border: 10px solid red; */
+  box-shadow: 0 5px 10px gainsboro;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+/* @media (min-width: 320px) {
+  .container {
+    position: absolute;
+    background-color: grey;
+    height: 100vh;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 481px) {
+  .container {
+    position: absolute;
+    background-color: grey;
+    height: 100vh;
+    width: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    position: absolute;
+    background-color: grey;
+    height: 100vh;
+    width: 60vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+} */
