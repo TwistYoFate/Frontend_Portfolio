@@ -8,24 +8,24 @@
   transform: translate(-50%, -50%);
   border-radius: 10px;
   background: white;
-  box-shadow: 0 20px 20px skyblue;
+  box-shadow: 0 0 20px #0055D4;
   z-index: -1;
 }
 
 .form > label,
-input {
+input, select {
   position: absolute;
 }
 
 #form__number__label {
-  top: 42%;
+  top: 32%;
   left: 23%;
   transform: translate(-50%, -70%);
   font-size: small;
 }
 
 #form__number {
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -70%);
   border: 1px solid gainsboro;
@@ -36,21 +36,21 @@ input {
 
 #form__number:focus {
   outline: none !important;
-  border: 1px solid skyblue;
+  border: 1px solid #0055D4;
   border-radius: 5px;
   /* border: 10px solid red; */
   box-shadow: 0 5px 10px gainsboro;
 }
 
 #form__name__label {
-  top: 62%;
+  top: 52%;
   left: 23%;
   transform: translate(-50%, -70%);
   font-size: small;
 }
 
 #form__name {
-  top: 70%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -70%);
   border: 1px solid gainsboro;
@@ -59,23 +59,23 @@ input {
   height: 7%;
 }
 
-#form__name:focus {
+#form__name:focus , #form__month:focus, #form__year:focus, #form__cvv:focus {
   outline: none !important;
-  border: 1px solid skyblue;
+  border: 1px solid #0055D4;
   border-radius: 5px;
   /* border: 10px solid red; */
   box-shadow: 0 5px 10px gainsboro;
 }
 
 #form__expiry__label{
-  top: 82%;
+  top: 72%;
   left: 23%;
   transform: translate(-50%, -70%);
   font-size: small;
 }
 
 #form__month {
-  top: 90%;
+  top: 80%;
   left: 20%;
   transform: translate(-50%, -70%);
   border: 1px solid gainsboro;
@@ -86,7 +86,7 @@ input {
 
 
 #form__year {
-  top: 90%;
+  top: 80%;
   left: 45%;
   transform: translate(-50%, -70%);
   border: 1px solid gainsboro;
@@ -96,7 +96,7 @@ input {
 }
 
 #form__cvv__label{
-  top: 82%;
+  top: 72%;
   right: 23%;
   transform: translate(0%, -70%);
   font-size: small;
@@ -104,7 +104,7 @@ input {
 
 
 #form__cvv {
-  top: 90%;
+  top: 80%;
   right: 9%;
   transform: translate(0%, -70%);
   border: 1px solid gainsboro;
@@ -113,46 +113,37 @@ input {
   height: 7%;
 }
 
-
-
-/* 320px — 480px: Mobile devices
-481px — 768px: iPads, Tablets
-769px — 1024px: Small screens, laptops
-1025px — 1200px: Desktops, large screens
-1201px and more —  Extra large screens, TV */
-
-/* @media (min-width: 320px) {
-  .container {
-    position: absolute;
-    background-color: grey;
-    height: 100vh;
-    width: 100vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.form__submit{
+  position:absolute;
+  width:80%;
+  height:7%;
+  bottom:5%;
+  left:50%;
+  transform:translate(-50%,0);
+  /* outline: none !important; */
+  border: 1px solid #0055D4;
+  border-radius: 5px;
+  background:#0055D4;
+  color:white;
+  /* border: 10px solid red; */
 }
 
-@media (min-width: 481px) {
-  .container {
-    position: absolute;
-    background-color: grey;
-    height: 100vh;
-    width: 80vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.form__submit:hover{
+  box-shadow: 0 5px 10px gainsboro;
+  cursor:pointer;
 }
 
-@media (min-width: 769px) {
-  .container {
-    position: absolute;
-    background-color: grey;
-    height: 100vh;
-    width: 60vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-} */
+
+/* Remove Increment and Decrement arrows from Number input field */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
