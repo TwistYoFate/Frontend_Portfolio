@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="card.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card__front">
+        <div class="card__focus"></div>
+        <div class="card__chip">
+          <img src="./assets/chip.png" height="100%" width="100%"></img>
+        </div>
+        <div class="card__type">
+          <div class="digit">
+          <img src="./assets/card_types/visa.png" height="100%" width="100%"></img>
+          </div>
+        </div>
+        <div class="card__number">
+          <div class="digit">#</div>
+          <div class="digit">#</div>
+          <div class="digit">#</div>
+          <div class="digit">#</div>
+          &nbsp;&nbsp;
+          <div class="digit">#</div>
+          <div class="digit">#</div>
+          <div class="digit">#</div>
+          <div class="digit">#</div>
+          &nbsp;&nbsp;
+          <div class="digit">#</div>
+          <div class="digit">#</div>
+          <div class="digit">#</div>
+          <div class="digit">#</div>
+        </div>
+        <div class="card__holder">
+          <label class="card__name__label">Card Holder</label>
+          <div class="card__name">name</div>
+        </div>
+        <div class="card__expiry">
+          <label class="card__expiry__label">Expires</label><br/>
+          <div class="card__month">MM</div>/<div class="card__year">YY</div>
+        </div>
+      </div>
+      <div class="card__back">
+        <div class="card__blackstrip"></div>
+        <div class="card__cvv" >
+          <label class="card__cvv__label">CVV</label>
+          <div class="card__cvv__code"></div>
+        </div>
+        <div class="card__type">
+          <div class="digit">
+          <img src="./assets/card_types/visa.png" height="100%" width="100%"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="form">
+      <label for="form__number" id="form__number__label">Card Number</label>
+      <input type="text" id="form__number" maxlength="14"></input>
+  
+      <label for="form__name" id="form__name__label">Card Holder Name</label>
+      <input type="text" id="form__name"></input>
+  
+      <label for="form__year" id="form__expiry__label">Expiration Date</label>
+      <select id="form__month" >
+        <option value="MM" disabled selected hidden>MONTH</option>
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
+      <select id="form__year">
+        <option value="YY" disabled selected hidden>YEAR</option>
+      </select>
+  
+      <label for="form__cvv" id="form__cvv__label">CVV</label>
+      <input type="number" id="form__cvv"></input>
+      <button class="form__submit">Submit</button>
+    </div>
+  </div>
+  <script type="text/javascript">
+    let curryear = new Date().getFullYear();
+    console.log(curryear)
+    for(let i=1990;i<=curryear;i++){
+      const temp = document.createElement("option");
+      temp.setAttribute("value",`${i}`);
+      temp.innerText = i;
+      document.querySelector("#form__year").appendChild(temp);
+    }
+  </script>
+  <script type="module" src="eventHandlers.js" ></script>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
