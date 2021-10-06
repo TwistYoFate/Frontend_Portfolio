@@ -1,3 +1,2 @@
-# js-b3iixp
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-b3iixp)
+# Hosted at
+https://adoring-northcutt-669294.netlify.app/
